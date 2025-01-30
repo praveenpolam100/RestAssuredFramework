@@ -1,4 +1,4 @@
-package reusablepackages;
+package restutils;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -10,7 +10,7 @@ import static io.restassured.RestAssured.given;
 
 public class RestUtil {
 
-    public static Response postRequest(String uri, Map<String, Object>requestPayload, Map<String, String> params){
+    public static Response postRequest(String uri, Map<String, Object>requestPayload, Map<String, Object> params){
 
               return  RestAssured
                         .given()
